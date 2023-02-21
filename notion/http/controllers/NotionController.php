@@ -10,8 +10,14 @@ class NotionController extends Controller
     public function receive()
     {
         $url = post('url');
+        $taskName = post('task_name');
+        $assign_id = post('assign_id');
+        $category = post('category');
+        $progress = post('progress');
+        $dateStart = post('date_start');
 
-        Log::info($url);
+        // Tu uz mozeme zapisovat do WGridu
+
     }
     public function index()
     {
