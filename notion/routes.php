@@ -12,5 +12,5 @@ Route::group(['prefix' => 'notion'], function () {
     Route::post('/update', [NotionController::class, 'update']);
 
     /* ZAPIER HANDLER */
-    Route::post('/api/v1/', [NotionController::class, 'update']);
+    Route::post('/api/v1/receive', [NotionController::class, 'receive']);
 });

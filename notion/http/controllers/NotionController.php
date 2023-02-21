@@ -7,6 +7,12 @@ use Log;
 
 class NotionController extends Controller
 {
+    public function receive()
+    {
+        $url = post('url');
+
+        Log::info($url);
+    }
     public function index()
     {
         $res = $this->getFromApi(post('task_name'));
