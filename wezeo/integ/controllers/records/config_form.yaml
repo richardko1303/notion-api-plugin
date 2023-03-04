@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Record
+
+# Model Form Field configuration
+form: $/wezeo/integ/models/record/fields.yaml
+
+# Model Class name
+modelClass: Wezeo\Integ\Models\Record
+
+# Default redirect location
+defaultRedirect: wezeo/integ/records
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: wezeo/integ/records/update/:id
+    redirectClose: wezeo/integ/records
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: wezeo/integ/records
+    redirectClose: wezeo/integ/records
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
